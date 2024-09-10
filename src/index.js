@@ -1,10 +1,10 @@
-import React from 'react';
+import { menu, lessons, features } from './data/data.js'
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import { menu, lessons } from './data/data.js'
+import React from 'react';
 import App from './App';
+import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <App headerMenu={menu} courses={lessons} />
+    <App headerMenu={menu} courses={lessons} features={features} />
 );

@@ -1,3 +1,4 @@
+import Features from './components/Features/Features.jsx';
 import Lessons from './components/Lessons/Lessons.jsx';
 import Header from './components/Header/Header.jsx';
 import About from './components/About/About.jsx';
@@ -10,6 +11,7 @@ function App(props) {
       <Header menu={props.headerMenu} />
       <Hero />
       <Lessons lessons={props.courses} />
+      <Features features={props.features} />
       <About />
     </div>
   );
