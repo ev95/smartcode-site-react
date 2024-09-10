@@ -1,0 +1,118 @@
+section {
+    padding: 80px 0;
+}
+
+.bg-silver {
+    background: #fbfbfb;
+}
+
+.courses .section-title {
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 30px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    line-height: 32px;
+    text-align: left;
+}
+
+.section-title h2 span {
+    font-weight: 700;
+}
+
+section .section-title.left p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    max-width: 600px;
+    text-align: left;
+
+}
+
+section.courses .section-box {
+    column-gap: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 80px;
+}
+
+section .section-box .section-info {
+    flex-grow: 1;
+}
+
+section.courses .section-box .section-info .courses-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 3%;
+}
+
+section.courses .section-box .section-info .courses-box .course-item {
+    background-color: #fff;
+    flex-grow: 1;
+    width: 250px;
+    padding: 35px 20px 55px;
+    text-align: center;
+    box-shadow: 1.5px 1.5px 15px rgba(0, 0, 0, .05);
+    border-radius: 22px;
+    position: relative;
+    overflow: hidden;
+}
+
+section.courses .section-box .section-info .courses-box .course-item img {
+    height: 68px;
+    margin-bottom: 12px;
+}
+
+section.courses .section-box .section-info .courses-box .course-item h2 {
+    color: var(--main);
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 6px;
+}
+
+section.courses .section-box .section-info .courses-box .course-item h2 a {
+    color: #f3b01b;
+    font-weight: 300;
+}
+
+section.courses .section-box .section-info .courses-box .course-item h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 200;
+}
+a:active, a:link, a:visited, a:focus {
+    color: #000;
+}
+
+section.courses .section-box .section-info .courses-box .course-item a.btn-act {
+    display: inline-block;
+    padding: 5px 17px;
+    border: 1px solid #767676;
+    margin-top: 20px;
+    border-radius: 20px;
+    transition: all .4s;
+}
+
+section.courses .section-box .section-info .courses-box .course-item p {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-top: 1px solid #fafafa;
+    display: flex;
+    justify-content: space-between;
+    color: #404040;
+    line-height: 25px;
+}
+
+section.courses .section-box .section-image {
+    width: 500px;
+}
