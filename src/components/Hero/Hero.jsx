@@ -1,5 +1,14 @@
 import MainButton from '../MainButton/MainButton';
+import { FaSquareFacebook, FaSquareInstagram } from "react-icons/fa6";
+
+import { FaLinkedin } from "react-icons/fa";
+import { AiFillTikTok } from "react-icons/ai";
+
+
+
+
 import './Hero.css'
+
 
 function Hero(){
     const img_url = 'https://smartcode.am/public/image/header.svg'
@@ -13,22 +22,21 @@ function Hero(){
                         <div className="header-action">
                             <MainButton />
                             <a className="but-play" href="https://smartcode.am/">
-                            <i className="far fa-play-circle"></i>
-                            {/* <FontAwesomeIcon icon={["far", "fa-play-circle"]} /> */}
-                             Տեսանյութ</a>
+                            <i className="far fa-play-circle"></i> Տեսանյութ</a>
                         </div>
                         <ul className="social-links">
                             <li>
-                                <a href="https://www.facebook.com/SmartCode.am/" target="_blank" rel="noreferrer"><i className="fab fa-facebook-f"></i></a>
+                           
+                                <a href="https://www.facebook.com/SmartCode.am/" target="_blank" rel="noreferrer"> <FaSquareFacebook /></a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/company/smarttechnologyllc/" target="_blank" rel="noreferrer"><i className="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.linkedin.com/company/smarttechnologyllc/" target="_blank" rel="noreferrer"><FaLinkedin /></a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/smartcode.am/" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/smartcode.am/" target="_blank" rel="noreferrer"><FaSquareInstagram /></a>
                             </li>
                             <li>
-                                <a href="https://www.tiktok.com/@smartcode.am" target="_blank" rel="noreferrer"><i className="fab fa-tiktok"></i></a>
+                                <a href="https://www.tiktok.com/@smartcode.am" target="_blank" rel="noreferrer"><AiFillTikTok /></a>
                             </li>
                         </ul>
                 </div>
