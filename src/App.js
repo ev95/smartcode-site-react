@@ -3,10 +3,10 @@ import About from './components/About/About.jsx';
 import Hero from './components/Hero/Hero.jsx';
 import './App.css';
 
-function App() {
+function App(props) {
   return (
     <div className="App">
-      <Header />
+      <Header menu={props.headerMenu} />
       <Hero />
       <About />
     </div>
