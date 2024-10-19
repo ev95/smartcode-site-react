@@ -1,13 +1,13 @@
+import { forwardRef } from 'react';
+
 import featuresImg from '../../assets/images/features-img.svg';
 import MainButton from '../MainButton/MainButton.jsx';
-
-import './Features.css';
 import { Feature } from '../Feature/Feature.jsx';
+import './Features.css';
 
-
-function Features({ features }) {
+const Features = forwardRef(({ features }, ref) => {
     return (
-        <section className="features">
+        <section ref={ref} className="features">
             <div className="container">
                 <div className="section-title">
                     <h2>Ինչո՞ւ սովորել <span>մեզ մոտ</span></h2>
@@ -32,6 +32,6 @@ function Features({ features }) {
             </div>
         </section>
     )
+})
 
-}
 export default Features;

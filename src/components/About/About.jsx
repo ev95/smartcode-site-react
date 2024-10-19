@@ -1,8 +1,9 @@
+import { forwardRef } from 'react';
 import './About.css'
 
-function About(){
+const About = forwardRef((_, ref) => {
     return (
-        <section className="about">
+        <section ref={ref} className="about">
             <div className="container">
                 <div className="section-title">
                     <h2>Մեր <span>մասին</span></h2>
@@ -19,6 +20,6 @@ function About(){
             </div>
         </section>
     )
-}
+})
 
 export default About;

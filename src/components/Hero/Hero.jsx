@@ -1,10 +1,10 @@
+import { forwardRef } from 'react';
 import MainButton from '../MainButton/MainButton';
 import './Hero.css'
 
-
-function Hero({ socials }) {
+const Hero = forwardRef(({ socials, heroRef }, ref) => {
     return (
-        <div className="header-main">
+        <div ref={ref} className="header-main">
             <div className="container">
                 <div className="header-info">
                     <h1>
@@ -29,6 +29,7 @@ function Hero({ socials }) {
             </div>
         </div>
     )
-}
+})
+
 
 export default Hero;

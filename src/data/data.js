@@ -4,19 +4,23 @@ import { AiFillTikTok } from "react-icons/ai";
 
 export const menu = [
   {
+    name: "Գլխավոր",
+    ref: "heroRef",
+    url: "https://smartcode.am/hy/staff",
+  },
+  {
     name: "Դասընթացներ",
+    ref: "lessonsRef",
     url: "https://smartcode.am/hy/courses",
   },
   {
     name: "Առավելություններ",
+    ref: "featuresRef",
     url: "https://smartcode.am/hy/features",
   },
   {
-    name: "Թրեյներներ",
-    url: "https://smartcode.am/hy/staff",
-  },
-  {
     name: "Մեր մասին",
+    ref: "aboutRef",
     url: "https://smartcode.am/hy/about-us",
   },
 ];
