@@ -1,17 +1,13 @@
-import Features from './components/Features/Features.jsx';
-import Lessons from './components/Lessons/Lessons.jsx';
-import Header from './components/Header/Header.jsx';
-import About from './components/About/About.jsx';
-import Hero from './components/Hero/Hero.jsx';
-import './App.css';
+import { Features, Lessons, Header, About, Hero } from "./components";
+import "./App.css";
 
-function App(props) {
+function App({ headerMenu, courses, features, socials }) {
   return (
     <div className="App">
-      <Header menu={props.headerMenu} />
-      <Hero />
-      <Lessons lessons={props.courses} />
-      <Features features={props.features} />
+      <Header menu={headerMenu} />
+      <Hero socials={socials} />
+      <Lessons lessons={courses} />
+      <Features features={features} />
       <About />
     </div>
   );
