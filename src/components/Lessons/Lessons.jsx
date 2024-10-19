@@ -1,4 +1,5 @@
 import LessonsImg from '../../assets/images/lessons-img.svg';
+import { Lesson } from '../Lesson/Lesson';
 import './Lessons.css';
 
 function Lessons(props) {
@@ -13,22 +14,9 @@ function Lessons(props) {
                     <div className="section-info">
                         <div className="courses-box active">
                             {
-                                props.lessons.map((lesson) => {
+                                props.lessons.map((lesson, index) => {
                                     return (
-                                        <div className="course-item">
-                                            <a href="https://smartcode.am/hy" target='_blank' rel="noreferrer" title="WEB Front-End">
-                                                <img src={lesson.image} alt={lesson.title} title={lesson.title} />
-                                            </a>
-                                            <h2>
-                                                <a href="https://smartcode.am/hy" target='_blank' rel="noreferrer">{lesson.title}</a>
-                                            </h2>
-                                            <h3>Դասընթաց</h3>
-                                            <a href="https://smartcode.am/hy" target='_blank' rel="noreferrer" className="btn-act">Դիտել</a>
-                                            <p>
-                                                <span>{lesson.duration}</span>
-                                                <span>{lesson.price}</span>
-                                            </p>
-                                        </div>
+                                        <Lesson key={index} lesson={lesson} />
                                     )
                                 })
                             }

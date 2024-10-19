@@ -3,8 +3,6 @@ import './Hero.css'
 
 
 function Hero({ socials }) {
-    const img_url = 'https://smartcode.am/public/image/header.svg';
-
     return (
         <div className="header-main">
             <div className="container">
@@ -19,15 +17,15 @@ function Hero({ socials }) {
                     </div>
                     <ul className="social-links">
                         {
-                            socials.map((el) => (
-                                <li>
+                            socials.map((el, index) => (
+                                <li key={index}>
                                     <a href={el.url} target="_blank" rel="noreferrer">{el.icon}</a>
                                 </li>
                             ))
                         }
                     </ul>
                 </div>
-                <img src={img_url} className="header-image" alt='Hero' />
+                <img src="https://smartcode.am/public/image/header.svg" className="header-image" alt='Hero' />
             </div>
         </div>
     )
