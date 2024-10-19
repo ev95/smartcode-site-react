@@ -1,0 +1,36 @@
+section.features .section-box .section-info ul li.dropbox .dropbox-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  cursor: pointer;
+  padding: 15px 25px;
+}
+
+section.features .section-box .section-info ul li.dropbox .dropbox-head div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section.features
+  .section-box
+  .section-info
+  ul
+  li.dropbox
+  .dropbox-head
+  div
+  svg {
+  margin-right: 15px;
+  color: #f3b01b;
+  font-size: 1.5em;
+}
+
+.features .section-box .section-info p {
+  line-height: 25px;
+}
+
+section.features .section-box .section-info ul li.dropbox .dropbox-collapse {
+  border-top: 1px solid #f3f3f3;
+  padding: 20px 25px 25px;
+}

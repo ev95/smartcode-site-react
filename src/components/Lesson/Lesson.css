@@ -1,0 +1,64 @@
+section.courses .section-box .section-info .courses-box .course-item {
+  background-color: #fff;
+  flex-grow: 1;
+  width: 250px;
+  padding: 35px 20px 55px;
+  text-align: center;
+  box-shadow: 1.5px 1.5px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 22px;
+  position: relative;
+  overflow: hidden;
+}
+
+section.courses .section-box .section-info .courses-box .course-item img {
+  height: 68px;
+  margin-bottom: 12px;
+}
+
+section.courses .section-box .section-info .courses-box .course-item h2 {
+  color: var(--main);
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 6px;
+}
+
+section.courses .section-box .section-info .courses-box .course-item h2 a {
+  color: #f3b01b;
+  font-weight: 300;
+}
+
+section.courses .section-box .section-info .courses-box .course-item h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 200;
+}
+a:active,
+a:link,
+a:visited,
+a:focus {
+  color: #000;
+}
+
+section.courses .section-box .section-info .courses-box .course-item a.btn-act {
+  display: inline-block;
+  padding: 5px 17px;
+  border: 1px solid #767676;
+  margin-top: 20px;
+  border-radius: 20px;
+  transition: all 0.4s;
+}
+
+section.courses .section-box .section-info .courses-box .course-item p {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  padding: 7px 20px;
+  font-size: 12px;
+  border-top: 1px solid #fafafa;
+  display: flex;
+  justify-content: space-between;
+  color: #404040;
+  line-height: 25px;
+}

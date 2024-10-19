@@ -1,27 +1,26 @@
 import MainButton from '../MainButton/MainButton.jsx';
 import './Header.css';
 
-function Header(props){
-const logo = 'https://smartcode.am/public/image/logo.png?v=1'
+function Header({ menu }) {
 
-    return(
+    return (
         <nav className="navtop">
             <div className="container">
                 <a className="navtop-logo" href="/">
-                    <img src={logo} alt="Smart Code Logo" title="Smart Code Logo" />
+                    <img src='https://smartcode.am/public/image/logo.png?v=1' alt="Smart Code Logo" title="Smart Code Logo" />
                 </a>
                 <ul className="navtop-menu">
                     {
-                        props.menu.map((val)=> {
+                        menu.map((val, index) => {
                             return (
-                                <li>
+                                <li key={index}>
                                     <a href={val.url}>{val.name}</a>
                                 </li>
                             )
                         })
                     }
                 </ul>
-               <MainButton />
+                <MainButton />
             </div>
         </nav>
     )

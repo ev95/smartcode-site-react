@@ -1,12 +1,11 @@
 import featuresImg from '../../assets/images/features-img.svg';
 import MainButton from '../MainButton/MainButton.jsx';
-import { FaChevronDown, FaStar } from "react-icons/fa6";
-
 
 import './Features.css';
+import { Feature } from '../Feature/Feature.jsx';
 
 
-function Features(props) {
+function Features({ features }) {
     return (
         <section className="features">
             <div className="container">
@@ -19,27 +18,11 @@ function Features(props) {
 
                     <div className="section-info">
                         <ul>
-                            {
-                                props.features.map((feature) => {
-                                    return (
-
-                                        <li className="dropbox">
-                                            <div className="dropbox-head">
-                                                <div>
-                                                    <FaStar />
-                                                    <p>{feature.title}</p>
-                                                </div>
-                                                <FaChevronDown />
-                                            </div>
-                                            <div className="dropbox-collapse">
-                                                <p>{feature.description}</p>
-                                            </div>
-                                        </li>
-                                    )
-                                })
-                            }
-
-
+                            {features.map((feature, index) => {
+                                return (
+                                    <Feature key={index} feature={feature} />
+                                )
+                            })}
                         </ul>
                     </div>
                 </div>
